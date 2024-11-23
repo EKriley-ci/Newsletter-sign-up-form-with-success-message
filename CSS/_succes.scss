@@ -1,0 +1,41 @@
+.succes {
+    display: flex;
+    flex-direction: column;
+    padding: 5em 1em 2em 1em ;
+    justify-content: space-between;
+    min-height: 100vh;
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        #confirmationMassage {
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+
+    img {
+        max-width: 50px;
+    }
+}
+
+@media screen and (min-width:760px) {
+    .confirm {
+        display: flex;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        .succes {
+        border-radius: 1.5em !important;
+        background-color: #fff;
+        min-height: 100px !important;
+        padding: 2em !important;
+        max-width: 400px;
+        gap: 2em !important;
+        max-height: 400px !important ;
+
+        }
+    }
+}

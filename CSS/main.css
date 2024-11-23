@@ -1,0 +1,189 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+li {
+  list-style-position: inside;
+  list-style-image: url(../assets/images/icon-list.svg);
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 1em;
+  font-weight: 500;
+  color: #fff;
+  background-color: hsl(234, 29%, 20%);
+  outline: none;
+}
+button:hover {
+  background: linear-gradient(to right, hsl(4, 87%, 58%), hsl(19, 96%, 55%));
+}
+button:active {
+  transform: scale(0.98);
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+body main {
+  min-height: 100vh;
+}
+body main .souscription picture {
+  max-width: 375px;
+}
+body main .souscription .contenaire {
+  padding: 1.2em 1.5em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between !important;
+  min-height: 100%;
+  gap: 1em;
+}
+body main .souscription .contenaire form {
+  min-width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1.5em;
+}
+body main .souscription .contenaire form .champ {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  position: relative;
+}
+body main .souscription .contenaire form .champ label {
+  font-size: 12px;
+  font-weight: bold;
+}
+body main .souscription .contenaire form .champ input {
+  padding: 1em;
+  line-height: normal;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 2px solid gray;
+  outline: 2px solid hsl(234, 29%, 20%);
+}
+body main .souscription .contenaire form .champ #message {
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  color: hsl(4, 100%, 67%);
+}
+
+.succes {
+  display: flex;
+  flex-direction: column;
+  padding: 5em 1em 2em 1em;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+.succes .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.succes .content #confirmationMassage span {
+  font-weight: bold;
+}
+.succes img {
+  max-width: 50px;
+}
+
+@media screen and (min-width: 760px) {
+  .confirm {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .confirm .succes {
+    border-radius: 1.5em !important;
+    background-color: #fff;
+    min-height: 100px !important;
+    padding: 2em !important;
+    max-width: 400px;
+    gap: 2em !important;
+    max-height: 400px !important;
+  }
+}
+@media screen and (min-width: 760px) {
+  body {
+    background-color: hsl(234, 29%, 20%);
+  }
+  body main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body main .souscription {
+    border-radius: 1.5em;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 1em;
+    display: flex;
+    flex-direction: row-reverse !important;
+  }
+  body main .souscription picture img {
+    max-width: 430px !important;
+    max-height: 550px !important;
+  }
+  body main .souscription .contenaire {
+    padding: 5em 3em !important;
+    gap: 0.5em !important;
+  }
+}
+/* Barre de chargement */
+#loadbar {
+  position: fixed; /* Fixe la barre sur l'écran */
+  top: 0; /* S'assure que la barre couvre toute la page */
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5843137255); /* Couleur d'arrière-plan semi-transparente */
+  z-index: 999; /* S'assure que la barre est au premier plan */
+  display: none;
+}
+#loadbar .loadbar {
+  overflow: hidden;
+  border: 2px solid pink;
+  width: 90%; /* Largeur relative pour petits écrans */
+  max-width: 400px; /* Largeur maximale pour les écrans plus grands */
+  border-radius: 40px;
+}
+#loadbar .loadbar .objet {
+  min-height: 100%;
+  width: 1%;
+  padding: 0.5em;
+  background-color: pink;
+  animation: fill 0.3s ease-in-out forwards; /* Animation se termine à 100% */
+}
+@keyframes fill {
+  0% {
+    width: 1%;
+  }
+  100% {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */

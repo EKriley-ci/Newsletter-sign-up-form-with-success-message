@@ -1,0 +1,57 @@
+body {
+    min-height: 100vh;
+    background-color:  hsl(0, 0%, 100%);
+    font-weight: 400;
+    main {
+    min-height: 100vh;
+
+        .souscription {
+            // display: none;
+
+            picture  {
+                max-width: 375px;
+                // max-height: 284px;
+            }
+            .contenaire {
+                padding: 1.2em 1.5em;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-between !important;
+                min-height: 100%;
+                gap: 1em;
+                form {
+                    .champ {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.4em;
+                        position: relative;
+                        label {
+                            font-size: 12px;
+                            font-weight: bold;
+                        }
+                        input {
+                            // height: 50px;
+                            padding: 1em;
+                            line-height: normal;
+                            border-radius: 5px;
+                            font-weight: bold;
+                            border: 2px solid gray;
+                            outline: 2px solid hsl(234, 29%, 20%);
+                        }
+                        #message {
+                            font-weight: bold;
+                            position: absolute;
+                            right: 0;
+                            font-size: 12px;
+                            color: hsl(4, 100%, 67%);
+                        }
+                    }
+                    min-width: 100%;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    gap: 1.5em;
+                }
+            }
+        }
+    }
+}

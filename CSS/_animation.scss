@@ -1,0 +1,40 @@
+/* Barre de chargement */
+#loadbar {
+    position: fixed; /* Fixe la barre sur l'écran */
+    top: 0; /* S'assure que la barre couvre toute la page */
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000095; /* Couleur d'arrière-plan semi-transparente */
+    z-index: 999; /* S'assure que la barre est au premier plan */
+    display: none; 
+
+    .loadbar {
+        overflow: hidden;
+        border: 2px solid pink;
+        width: 90%; /* Largeur relative pour petits écrans */
+        max-width: 400px; /* Largeur maximale pour les écrans plus grands */
+        border-radius: 40px;
+
+        .objet {
+            min-height: 100%;
+            width: 1%;
+            padding: 0.5em;
+            background-color: pink;
+            animation: fill 0.3s ease-in-out forwards; /* Animation se termine à 100% */
+        }
+
+        @keyframes fill {
+            0% {
+                width: 1%;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+    }
+}

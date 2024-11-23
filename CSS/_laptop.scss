@@ -1,0 +1,29 @@
+@media screen and (min-width: 760px) {
+   body {
+       background-color:  hsl(234, 29%, 20%);
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .souscription {
+            border-radius: 1.5em;
+            max-width: 900px;
+            background-color: #fff;
+            padding: 1em;
+            display: flex;
+            flex-direction: row-reverse !important;
+            picture {
+                img {
+                    max-width: 430px !important;
+                    max-height: 550px !important;
+
+                }
+            }
+            .contenaire {
+                padding: 5em 3em !important;
+                gap: 0.5em !important;
+            }
+        }
+    }
+   }
+}

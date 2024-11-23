@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newletter sign up || by rilay</title>
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+    <div id="loadbar">
+        <strong style="color: white;">loading...</strong>
+        <div class="loadbar">
+            <div class="objet"></div>
+        </div>
+    </div>
+    
+    <main>
+        <div class="souscription">
+            <picture title="illustration">
+                <source media="(max-width: 768px)" srcset="assets/images/illustration-sign-up-mobile.svg">
+                <source media="(min-width: 768px)" srcset="assets/images/illustration-sign-up-desktop.svg" alt="laptop illustration">
+                <img src="assets/images/illustration-sign-up-mobile.svg" alt="moile illustration">
+            </picture>
+            <div class="contenaire">
+                <h2>  Stay updated!
+                </h2>
+                <p>
+                    Join 60,000+ product managers receiving monthly updates on:
+                </p>
+                <ul>
+                    <li>  Product discovery and building what matters
+                    </li>
+                    <li>  Measuring to ensure updates are a success
+                    </li>
+                    <li>  And much more!
+                    </li>
+                </ul>
+                <form id="form">
+                    <div class="champ">
+                        <label for="email">  Email address
+                        </label>
+                        <div id="message"></div>
+                        <input type="text" name="email" id="email" placeholder="email@company.com">
+                    </div>
+                    <button type="submit">  Subscribe to monthly newsletter
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
