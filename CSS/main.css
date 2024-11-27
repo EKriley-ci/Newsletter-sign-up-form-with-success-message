@@ -79,6 +79,7 @@ body main .souscription .contenaire form .champ input {
   font-weight: bold;
   border: 2px solid gray;
   outline: 2px solid hsl(234, 29%, 20%);
+  outline: none;
 }
 body main .souscription .contenaire form .champ #message {
   font-weight: bold;
